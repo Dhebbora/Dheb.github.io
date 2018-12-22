@@ -1,28 +1,27 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import github from './assets/icons/github.svg';
+import twitter from './assets/icons/twitter.svg';
+import linkedin from './assets/icons/linkedin.svg';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
-}
+ export default app => 
+  <div className='container'>
+    <img className='container__img' scr=''></img>
+    <div>
+      <h1 className='content__name'> Nome do Título </h1>
+      <p className='content__description'> Corpo do texto </p>
+      <ul className='content__redessociais'> Redes sociais
+        <li className='content__redessociais__instagram'>
+            <a className='twitter' href='' target='_blanck'><img src={twitter}/></a>         
+        </li>
+        <li className='content__redessociais__github '>
+            <a className='linkedin' href='' target='_blanck'><img src={linkedin}/></a>
+        </li>
+        <li className='content__redessociais__linkedin'>
+            <a className='github' href='' target='_blanck'><img src={github}/></a>
+        </li>
+      </ul>
+    </div>
+  </div>
 
-export default App;
+ 
